@@ -52,6 +52,11 @@ Usuario de prueba login:
 User: recepcion
 Password: 1234
 
+Dependencias Requeridas Nodejs:
+-cors
+-mysql
+-express
+
 
 
 
