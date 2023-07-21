@@ -48,6 +48,10 @@ Modulo Usuarios:
 ![image](https://github.com/marianos1988/sys-gym/assets/138610830/67221ee1-934d-424e-b2e4-cfcd5af38c47)
 
 
+Usuario de prueba login:
+User: recepcion
+Password: 1234
+
 
 
 
