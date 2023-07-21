@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: #FFFFFA;
+
+}
+ nav {
+    z-index: 4;
+ }
+
+ .pesa-pos{
+
+    transform:translatey(5px);
+ }
+
+.contenedor-general {
+
+    display: grid;
+    grid-template-columns: 280px minmax(400px,1fr) ;
+    grid-template-rows: 40px 900px;
+}
+
+a:hover{
+
+    cursor: pointer;
+}
+
+
+
+.fondo-de-pantalla {
+
+    background-image: url("../img/pesas.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 120%;
+}
+
+/* Ventana Modal */
+
+.background-modal {
+
+    z-index: 9999;
+    background: #ccc;
+    opacity: .9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: aparecer .5s ease-in;
+}
+
+.cartel-modal {
+
+    margin: auto auto;
+    transform: translateY(140%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 550px;
+    height: 150px;
+    opacity: 1;
+    border-radius: 10%;
+}
+
+.cartel-modal h2 {
+
+    margin: auto 2px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    
+
+}
+
+.cartel-modal button {
+    margin-top: 10px;
+}
+
+/*Barra superior*/
+.barra-contenedor{
+    z-index: 3;
+    grid-column: 1 / span 2 ;
+    grid-row: 1 / 2;
+    position: fixed; 
+    background: #0d0d0d;
+    width: 100%;
+    height: 40px;
+    color: whitesmoke;
+    border-bottom-style: none;
+}
+.barra-superior{
+
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-right: 30px;
+} 
+.barra-superior li{
+    display: inline-block;
+    margin: 0 15px;
+    line-height: 40px;
+    font-family: monospace
+}
+.barra-superior li{
+    color: whitesmoke;
+}
+.barra-superior li i{
+    color: whitesmoke;
+    padding-right: 5px;
+}
+
+/*Barra Navegacion*/
+
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    font-family: poppins, sans-serif;
+    position: fixed;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background: #0d0d0d;
+    transition: all .5s ease;
+    z-index: 3;
+
+}
+.sidebar header{
+
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #0d0d0d;  
+    user-select: none;
+    border-bottom: 1px solid #262626;
+}
+.sidebar header i{
+    position: relative;
+    top: 10px;
+    color: #FFFFFA;
+    
+}
+.logo{
+    transform: translateY(45px);
+    left: 0px;
+    bottom: -50px;
+    width: 280px;
+    height: 120px;
+    object-fit: contain;
+    transition: all .5s ease;
+}
+.sidebar ul {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 17px;
+    color: #FFFFFA; 
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-bottom: 0.1px solid #262626;
+    transition: .3s;
+}
+
+i {
+    font-size: 20px;
+}
+
+.sidebar ul li:hover {
+    padding-left: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.no-pointer {
+    cursor:auto;
+}
+
+.sidebar ul i{
+    margin-right: 16px;
+}
+.sidebar ul li ul li {
+    transform: translateX(-6px);
+}
+.siderbar ul ul li{
+    line-height: 10px;
+    border-bottom: none; 
+}
+#check{
+    display: none;
+}
+label #barra{
+    
+ 
+    position: fixed;
+    cursor: pointer;
+    background: #0d0d0d;
+    border-radius: 6px;
+}
+label #cancel{
+
+    z-index: 4;
+    position: fixed;
+    cursor: pointer;
+    color: #0d0d0d;
+    border-radius: 6px;
+}
+label #barra{
+    left: 20px;
+    top: 60px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 18px;
+    font-size: 30px;
+    color: #FFFFFA;
+    padding: 2px 8px;
+    transition: left .5s ease;
+}
+
+section {
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins, sans-serif;
+    padding: 20px;
+
+  }
+
+
+
+
+/*------------- Barra de Menu Responsive --------------- */
+
+.contenedor-general-responsive {
+
+    display: grid;
+    grid-template-columns: 85px minmax(400px,1fr) ;
+    grid-template-rows: 40px 800px;
+
+}
+
+.sidebar-responsive{
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-family: poppins, sans-serif;
+    position: fixed;
+    left: 0px;
+    width: 85px;
+    height: 100%;
+    background: #0d0d0d;
+    transition: all .5s ease;
+    color: #FFFFFA;
+
+}
+
+.sidebar-responsive header {
+
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.sidebar-responsive ul i{
+    font-size: 38px;
+    padding: 15px;
+}
+
+.sidebar-responsive ul li:hover {
+    padding-left: 9px;
+    transition: .3s;
+    cursor: pointer;
+    
+}
+
+.logo-responsive {
+
+    left: 0px;
+    transform: translate(-10px,25px);
+    bottom: -40px;
+    width: 75px;
+    height: 40px;
+    object-fit: contain;
+    transition: all .5s ease;
+    
+}
+
+.barra-responsive {
+    
+    display: none;
+    position:absolute;
+    cursor: pointer;
+    background: #0d0d0d;
+    border-radius: 6px;
+    display: none;
+}
+
+.cancel-responsive {
+    
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    color: #0d0d0d;
+    border-radius: 6px;
+    
+}
+
+
+/* boton Cargando*/
+.loader {
+    border: 16px solid #1e1e1c;
+    border-top: 16px solid #ae9f4b;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    box-shadow: 0px 0px 15px #ae9f4b
+}
+
+@keyframes spin {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        background-color: #1e1e1c;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aparecer {
+    
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+

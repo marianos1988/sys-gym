@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/*Contenedor cuenta corriente*/
+
+
+.contenedor-pagos{
+    
+    position: relative;
+    margin: auto;
+    max-width: 940px;
+    width: 940px;
+    margin-top: 20px;
+    background: rgba(219, 219, 219, 0.51);
+    padding: 15px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(219, 219, 219, 0.3); 
+    animation: aparecer .5s ease-in;
+    overflow-y: visible;
+}
+
+.buscador{
+    display: flex;
+    justify-content: center;
+}
+.buscador input{
+    width: 300px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: black;
+    outline: none;
+    border: 1px solid ;
+    border-radius: 30px;
+}
+.boton-buscar-pagos{
+    position: absolute;
+    right: 330px;
+    top: 14px;
+    width: 60px;
+    height: 60px;
+    background: #e6e600;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.boton-buscar-pagos:hover {
+  background: #f7f735;
+  transition: background .5s ease;
+}
+
+.boton-buscar-pagos i {
+    font-size: 17px;
+    color: black;
+    line-height: 60px;
+    transition: all .7s ease;
+}
+table.tabladatospersonales{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    border-spacing: 10px;
+}
+
+th, td{
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+th{
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+td {
+    
+    background-color: white;
+    text-align: left;
+    font-size: 13px;
+    text-align: center;
+    max-width: 300px;
+    min-width: 98px;
+
+        
+}
+
+.concepto {
+  width: 296px;
+}
+
+.lista-modo-pago{
+  width: 100%;
+  padding: 3px 5px;
+  background-color: white;
+  text-align: left;
+  font-size: 13px;
+  text-align: center;
+
+}
+
+.td-pagos {
+  padding: 10px 5px;
+}
+table.historial-pagos{
+    display: inline-block;
+    right: 12px;
+    top: -30px;
+    box-sizing: border-box;
+    border-spacing: 10px;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 250px;
+    min-width: 700px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-spacing: 10px;
+    animation: aparecer 2.0s ease;
+}
+
+
+
+tr, td.accion{
+    background: none;
+    width: 100px;
+}
+td.accion i{
+    display: flex inline-block;
+    justify-content: center;
+    cursor: pointer;
+    color: whitesmoke;
+    width: 26px;
+    height: 26px;
+    background: #404040;
+    line-height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;   
+}
+
+.ingresarpago form .carga-pago{
+    display: flex;
+    transform: translateY(-18px);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    padding: 2%;
+}
+form .carga-pago .input-box{
+    width: calc(100% / 2 - 1px);
+    margin-bottom: 5px;
+}
+
+.select-mes-pago {
+  width: 90%;
+  height: 35px;
+}
+
+.input-box label{
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    background-color: black;
+    border-radius: 5px;
+    color: whitesmoke;
+    width: 90%;
+}
+label{
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+}
+.input-box input{
+    height: 35px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 12px;
+    border-bottom-width: 3px;
+    transition: all 0.3s ease;  
+}
+
+.input-box .fecha-de-pago{
+  display: flex;
+  height: 35px;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 12px;
+  border-bottom-width: 3px;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.grupo-radio-pago {
+
+
+  display: flex;
+  flex-direction: row;
+  transform: translateX(-45px);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-bottom-width: 3px;
+  border-radius: 5px;
+  width: 125%;
+  
+
+}
+.grupo-radio-pago h4 {
+  margin: 0px 5px;
+  font-weight: 400;
+  width: 150px;
+  width: 100%;
+  font-size: small;
+
+}
+
+.grupo-radio-h4 {
+
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 0px 10px;
+  padding: 1px;
+
+}
+.input-box input:focus,
+.input-box input:focus{
+    border-color: #e6e600;
+}
+
+.pagos-datos-socio {
+
+  animation: aparecer 2.0s ease;
+}
+
+
+
+.boton input{
+    height: 100%;
+    width: 150%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #e6e600;
+}
+
+.boton-registrar-pago {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-40px);
+  animation: aparecer 3s ease;
+  
+}
+
+.btn-activo:hover {
+
+background-color: #b6b602;
+transition: ease .7s;
+
+}
+
+.btn-activo:active {
+
+  background-color: #ffff00;
+  transition: ease 0s;
+}
+
+.btn-inactivo:hover {
+  user-select: none;
+  cursor:default;
+  opacity: .5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  transition: opacity .5s ease;
+}
+
+.btn-inactivo-registrar-pago:hover {
+  user-select: none;
+  cursor:default;
+  opacity: .3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  transition: opacity .7s ease;
+}
+
+
+/*Boton Animado*/
+
+button {
+    margin: 20px;
+  }
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #111;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-3 {
+  background: #FFD31D;
+background: linear-gradient(0deg, #FFD31D 0%, #d4aa00 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+    background: #d4aa00;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+    background: #dbc159;
+    transition: all 1s;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+    color: #111;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+    background: #d4aa00;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+.td-cargando {
+  background: none;
+}
+
+.sector-loader-buscar-pago {
+
+  position: relative;
+  transform: translate(45px,-3px);
+  width: 45px;
+  height: 45px;
+}
+  
+.loader-buscar-pago {
+
+    border: 16px solid #1e1e1c;
+    border-top: 16px solid #ae9f4b;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 2s linear infinite;
+    box-shadow: 0px 0px 15px #ae9f4b;
+}
+
+.sector-loader-registrar-pago {
+
+  position: relative;
+  transform: translate(-1px,16px);
+  width: 45px;
+  height: 45px;
+}
+.sector-loader-registrar-pago-activos {
+
+  position: relative;
+  width: 45px;
+  height: 45px;
+
+}
+  
+.loader-registrar-pago {
+
+    border: 16px solid #1e1e1c;
+    border-top: 16px solid #ae9f4b;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 2s linear infinite;
+    box-shadow: 0px 0px 15px #ae9f4b;
+}
+
+.sector-loader-pagos-opciones {
+  transform: translate(-19px,-3px);
+  width: 25px;
+  height: 25px;
+}
+
+.loader-pagos-opciones {
+  border: 16px solid #1e1e1c;
+  border-top: 16px solid #ae9f4b;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+  box-shadow: 0px 0px 15px #ae9f4b;
+}
+
+@keyframes spin {
+
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      background-color: #1e1e1c;
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes aparecer {
+    
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

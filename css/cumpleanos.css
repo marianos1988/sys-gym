@@ -1,0 +1,178 @@
+.contenedor-cumpleanos {
+
+
+    float: right;
+    max-width: 380px;
+    max-height: 700px;
+    background: rgba(219, 219, 219, 0.51);
+    padding: 15px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(219, 219, 219, 0.3); 
+    animation: aparecer .5s ease-in;
+    overflow-y: visible;
+}
+
+.contenedor-cumpleanos .titulo-cumpleanos{
+
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contenedor-cumpleanos .titulo-cumpleanos::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 0;
+    bottom: 2px;
+    background: yellow;
+    margin-bottom: .5px;
+}
+
+.box-socio-cumple{
+    display: grid;
+    grid-template-columns: 250px 50px 30px;
+
+
+}
+
+.detalle-cumple {
+    margin: 5px;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+    
+}
+
+.sector-loader-cumpleanos-opciones {
+    grid-column: 3 / 4;
+}
+
+
+/*Boton Animado*/
+
+
+    
+      .custom-btn-cumple {   
+        margin: 8px;  
+        width: 50px;
+        height: 40px;
+        color: #111;
+        font-size: 17px;
+        border-radius: 5px;
+        padding: 10px 45px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+         box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+         7px 7px 20px 0px rgba(0,0,0,.1),
+         4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+      }
+      
+      .btn-3-cumple {
+
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-right: 5px;
+        background: #FFD31D;
+        background: linear-gradient(0deg, #FFD31D 0%, #d4aa00 100%);
+        width: 50px;
+        height: 40px;
+        line-height: 42px;
+        padding: 0;
+        border: none;
+        
+      }
+      .btn-3-cumple span {
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+      }
+      .btn-3-cumple:before,
+      .btn-3-cumple:after {
+        
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+         background: #d4aa00;
+        transition: all 0.3s ease;
+      }
+      .btn-3-cumple:before {
+        height: 0%;
+        width: 2px;
+      }
+      .btn-3-cumple:after {
+        width: 0%;
+        height: 2px;
+      }
+      .btn-3-cumple:hover{
+         background: #dbc159;
+         transition: all 1s;
+        box-shadow: none;
+      }
+      .btn-3-cumple:hover:before {
+        height: 100%;
+      }
+      .btn-3-cumple:hover:after {
+        width: 100%;
+      }
+      .btn-3-cumple span:hover{
+         color: #111;
+      }
+      .btn-3-cumple span:before,
+      .btn-3-cumple span:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+         background: #d4aa00;
+        transition: all 0.3s ease;
+      }
+      .btn-3-cumple span:before {
+        width: 2px;
+        height: 0%;
+      }
+      .btn-3-cumple span:after {
+        width: 0%;
+        height: 2px;
+      }
+      .btn-3-cumple span:hover:before {
+        height: 100%;
+      }
+      .btn-3-cumple span:hover:after {
+        width: 100%;
+      }
+
+.sector-loader-ficha-cumple-opciones {
+  
+    transform: translate(13px, 12px);
+    width: 25px;
+    height: 25px;
+  }
+
+.loader-ficha-cumple-opciones {
+    border: 16px solid #1e1e1c;
+    border-top: 16px solid #ae9f4b;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    animation: spin 2s linear infinite;
+    box-shadow: 0px 0px 15px #ae9f4b;
+}

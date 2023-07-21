@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+/*Contenedor nuevo socio*/
+
+.contenedor-nuevo-socio 
+{
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    max-width: 700px;
+    min-width: 525px;
+    width: 100%;
+    background: rgba(219, 219, 219, 0.51);
+    padding: 25px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(219, 219, 219, 0.3); 
+    animation: aparecer .5s ease-in;
+}
+
+
+.contenedor-nuevo-socio .titulo{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.contenedor-nuevo-socio .titulo::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    left: 0;
+    bottom: 0;
+    background: yellow
+}
+.contenedor-nuevo-socio form .detalles_personales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px  0 5px 0;
+}
+form .detalles_personales .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px
+}
+.detalles_personales .input-box .detalle{
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+.detalles_personales .input-box input{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 12px;
+    border-bottom-width: 3px;
+    transition: all 0.3s ease;
+}
+
+.campo-fecha-alta{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 12px;
+  border-bottom-width: 3px;
+  background-color: whitesmoke;
+  transition: all 0.3s ease;
+}
+.detalles_personales .input-box input:focus,
+.detalles_personales .input-box input:focus{
+    border-color: #e6e600;
+}
+
+.zona-img {
+
+  padding: 6px;
+  font-size: 30px;
+}
+
+/*Boton Animado*/
+
+.btn-nuevo-socio {
+
+margin: auto;
+
+}
+
+button {
+    margin: 20px;
+  }
+  .custom-btn {
+    
+    width: 130px;
+    height: 40px;
+    color: #111;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 10px 45px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+  .btn-3 {
+    background: #FFD31D;
+  background: linear-gradient(0deg, #FFD31D 0%, #d4aa00 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: #d4aa00;
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: #dbc159;
+     transition: all 1s;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: #111;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: #d4aa00;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+
+.img-adjunta {
+
+  object-fit: contain;
+}
+
+
+@keyframes aparecer {
+    
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
